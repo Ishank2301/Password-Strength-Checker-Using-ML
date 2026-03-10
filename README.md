@@ -280,9 +280,10 @@ pip install -r requirements.txt
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [General License](LICENSE).
 
 ---
+
 
 <p align="center">
   Made with ❤️ | Star ⭐ this repo if you found it useful!
