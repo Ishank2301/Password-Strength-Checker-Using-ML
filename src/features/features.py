@@ -9,7 +9,7 @@ VECTORIZER_PATH = "models/tfidf_vectorizer.pkl"
 def create_vectorizer():
 
     return TfidfVectorizer(
-        analyzer="char", ngram_range=(1, 3), sublinear_tf=True, max_features=20000
+        analyzer="char", ngram_range=(2, 3), sublinear_tf=True, max_features=5000
     )
 
 
@@ -30,7 +30,7 @@ def train_vectorizer():
 
     joblib.dump(vectorizer, VECTORIZER_PATH)
 
-    print(f"[features] Vectorizer saved → {VECTORIZER_PATH}")
+    print(f"[features] Vectorizer saved: {VECTORIZER_PATH}")
 
 
 if __name__ == "__main__":
