@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+# just to be safe adding c command rules.
 # C extensions
 *.so
 
@@ -126,4 +126,4 @@ venv.bak/
 dmypy.json
 
 # Pyre type checker
-.pyre/
+.pyre/   
