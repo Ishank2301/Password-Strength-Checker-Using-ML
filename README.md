@@ -147,34 +147,80 @@ X_test_vec  = vectorizer.transform(X_test)
 ---
 
 ## 📁 Project Structure
+Create the Project Folder Structure
 
-```
-password-strength-ml/
-│
-├── data/
-│   └── Password Strength.csv        # Raw dataset
-│
-├── notebooks/
-│   └── exploration.ipynb            # EDA and visualization
-│
-├── src/
-│   ├── preprocess.py                # Data cleaning & splitting
-│   ├── features.py                  # TF-IDF vectorization
-│   ├── train.py                     # Model training
-│   ├── evaluate.py                  # Metrics & confusion matrix
-│   └── predict.py                   # CLI prediction interface
-│
-├── models/
-│   ├── tfidf_vectorizer.pkl         # Saved vectorizer
-│   ├── logistic_model.pkl           # Saved LR model
-│   └── gradient_boost_model.pkl     # Saved GB model
-│
-├── requirements.txt
-├── README.md
-└── main.py                          # Entry point
-```
+From your terminal inside Projects_ALL:
+ 
+---mkdir password-strength-ml 
+---cd password-strength-ml
 
----
+Now create folders:
+ 
+---mkdir data 
+---mkdir data/raw 
+---mkdir data/processed
+ 
+---mkdir notebooks
+ 
+---mkdir src 
+---mkdir src/data 
+---mkdir src/features 
+---mkdir src/models 
+---mkdir src/utils
+ 
+---mkdir models 
+---mkdir config 
+---mkdir tests
+ 
+---mkdir api 
+---mkdir ui
+
+Now create files:
+ 
+---touch README.md 
+---touch requirements.txt 
+---touch main.py 
+---touch .gitignore
+ 
+---touch config/config.yaml
+ 
+---touch src/data/preprocess.py 
+---touch src/features/features.py 
+---touch src/models/train.py 
+---touch src/models/evaluate.py 
+---touch src/models/predict.py 
+---touch src/utils/helper.py
+ 
+---touch tests/test_pipeline.py
+ 
+---touch api/app.py 
+---touch ui/app.py
+
+Final structure becomes:
+
+password-strength-ml
+│
+├── api
+│   └── app.py
+│
+├── ui
+│   └── app.py
+│
+├── data
+│   ├── raw
+│   └── processed
+│
+├── notebooks
+│
+├── src
+│   ├── data
+│   ├── features
+│   ├── models
+│   └── utils
+│
+├── models
+├── config
+├── test ---
 
 ## 🚀 Getting Started
 
