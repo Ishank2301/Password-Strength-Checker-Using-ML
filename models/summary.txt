@@ -1,4 +1,0 @@
-Basically in this Models subfolder 3 main trained model are saved.
-|--TfidfVectorizer.pkl
-|--logistic_model.pkl
-|--XG_boost_model.pkl
