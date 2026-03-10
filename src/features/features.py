@@ -5,6 +5,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 VECTORIZER_PATH = "models/tfidf_vectorizer.pkl"
 
 
+# Creating a vectorizer function:
 def create_vectorizer():
 
     return TfidfVectorizer(
